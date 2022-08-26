@@ -1,0 +1,6 @@
+package Kotlin基础.pkg14_枚举
+
+enum class Season2(val temperature: Int) {
+  SPRING(10), SUMMER(30), AUTUMN(20), WINTER(-10)
+}
+
