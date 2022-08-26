@@ -1,4 +1,4 @@
-package Kotlin基础.pkg15_委托
+package Kotlin基础.pkg15_委托.p1_类委托
 
 interface MyInterface1 {
   fun myCode()

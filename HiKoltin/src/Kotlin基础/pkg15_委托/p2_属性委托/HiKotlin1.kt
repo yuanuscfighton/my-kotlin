@@ -1,4 +1,4 @@
-package Kotlin基础.pkg15_委托
+package Kotlin基础.pkg15_委托.p2_属性委托
 
 import kotlin.properties.Delegates
 

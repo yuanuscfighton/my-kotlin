@@ -1,4 +1,4 @@
-package Kotlin基础.pkg15_委托
+package Kotlin基础.pkg15_委托.p1_类委托
 
 // 委托(delegation)
 // 什么是委托: 有A和B两个组件，让A完成一件事情，A自己不做，把事情转交给B，B去完成原本由A去做的事情。此时，我们称B是A的委托。
@@ -34,10 +34,10 @@ fun main() {
 
 /*
 
-public final class Kotlin基础.pkg15_委托.MyClass implements Kotlin学习.kotlin基础.pkg15_委托.MyInterface {
+public final class Kotlin基础.pkg15_委托.p1_类委托.MyClass implements Kotlin学习.kotlin基础.pkg15_委托.MyInterface {
 
   // MyClass有一个带参数的构造方法
-  public Kotlin基础.pkg15_委托.MyClass(Kotlin学习.kotlin基础.pkg15_委托.MyInterface);
+  public Kotlin基础.pkg15_委托.p1_类委托.MyClass(Kotlin学习.kotlin基础.pkg15_委托.MyInterface);
     Code:
        0: aload_1
        1: ldc           #11          // String myInterface

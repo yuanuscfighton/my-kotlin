@@ -1,4 +1,4 @@
-package Kotlin基础.pkg15_委托
+package Kotlin基础.pkg15_委托.p1_类委托
 
 import kotlin.reflect.KProperty
 
@@ -24,9 +24,9 @@ class MyDelegate {
 fun main() {
   val myPropertyClass = MyPropertyClass()
 
-  myPropertyClass.str = "hello world" // 输出: Kotlin基础.pkg15_委托.MyPropertyClass@5197848c, new value is hello world
+  myPropertyClass.str = "hello world" // 输出: Kotlin基础.pkg15_委托.p1_类委托.MyPropertyClass@5197848c, new value is hello world
 
-  println(myPropertyClass.str) // 输出: Kotlin基础.pkg15_委托.MyPropertyClass@5197848c, your delegated property name is str
+  println(myPropertyClass.str) // 输出: Kotlin基础.pkg15_委托.p1_类委托.MyPropertyClass@5197848c, your delegated property name is str
 }
 
 /**
