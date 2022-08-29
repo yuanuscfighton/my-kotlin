@@ -1,4 +1,4 @@
-package Kotlin学习.pkg11_泛型与协变
+package Kotlin基础.pkg11_泛型与协变
 
 // 密封类（sealed class）
 // 密封类表示的是受限的类的层次结构，就是父类和子类的概念。
