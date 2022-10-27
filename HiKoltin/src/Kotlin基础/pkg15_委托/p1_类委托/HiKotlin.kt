@@ -1,16 +1,24 @@
 package Kotlin基础.pkg15_委托.p1_类委托
 
 // 委托(delegation)
-// 什么是委托: 有A和B两个组件，让A完成一件事情，A自己不做，把事情转交给B，B去完成原本由A去做的事情。此时，我们称B是A的委托。
-interface MyInterface {
-  fun myPrint()
-}
+// 什么是委托: 有A和B两个人，原本想让A去做一件事，A自己不做，把事情转交给B，B去完成原本由A去做的事情。此时，我们称B是A的委托。
 
 // 1.类的委托:
 // 委托的实现步骤:
 // step1 定义接口MyInterface
 // step2 实现接口
 // step3 定义MyClass，MyClass委托MyInterfaceImpl去myPrint()
+
+/**
+ * 第1步: 定义接口
+ */
+interface MyInterface {
+  fun myPrint()
+}
+
+/**
+ * 第2步: 实现接口
+ */
 class MyInterfaceImpl(private val str: String) : MyInterface {
   override fun myPrint() {
     println("welcome $str")
@@ -18,9 +26,9 @@ class MyInterfaceImpl(private val str: String) : MyInterface {
 }
 
 // MyClass这个类不打算自己实现myPrint()方法，而是把myPrint()的实现转交给MyInterfaceImpl类，
-// 即，MyClass的myPrint()方法的内容委托给MyInterfaceImpl这个类的一个实例，代替MyClass去完成myPrint()方法
+// 即，把MyClass的myPrint()方法的内容 委托给MyInterfaceImpl这个类的一个实例 代替MyClass去完成myPrint()方法
 //////////
-// 在Kotlin中，通过[by]关键字 + [委托的目标对象]，即MyClass构造方法中的参数
+// 在Kotlin中，通过[by]关键字 + [委托的目标对象]，即 MyClass构造方法中的参数
 class MyClass(myInterface: MyInterface) : MyInterface by myInterface
 
 fun main() {
